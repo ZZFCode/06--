@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95F0E9421CB8DBEF001DCE5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F0E9411CB8DBEF001DCE5D /* main.m */; };
+		95F0E9451CB8DBEF001DCE5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F0E9441CB8DBEF001DCE5D /* AppDelegate.m */; };
+		95F0E9481CB8DBEF001DCE5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F0E9471CB8DBEF001DCE5D /* ViewController.m */; };
+		95F0E94B1CB8DBEF001DCE5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F0E9491CB8DBEF001DCE5D /* Main.storyboard */; };
+		95F0E94D1CB8DBEF001DCE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F0E94C1CB8DBEF001DCE5D /* Assets.xcassets */; };
+		95F0E9501CB8DBEF001DCE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F0E94E1CB8DBEF001DCE5D /* LaunchScreen.storyboard */; };
+		95F0E95C1CB8E0F1001DCE5D /* ZZFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F0E95B1CB8E0F1001DCE5D /* ZZFViewController.m */; };
+		95F0E9631CB9142E001DCE5D /* ZZFBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F0E9621CB9142E001DCE5D /* ZZFBaseView.m */; };
+		95FCBCC51CB9441800705E93 /* ZZFSnapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FCBCC41CB9441800705E93 /* ZZFSnapView.m */; };
+		95FCBCC81CB9442500705E93 /* ZZFPushView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FCBCC71CB9442500705E93 /* ZZFPushView.m */; };
+		95FCBCCB1CB9444100705E93 /* ZZFAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FCBCCA1CB9444100705E93 /* ZZFAttachmentView.m */; };
+		95FCBCCE1CB9444D00705E93 /* ZZFSpringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FCBCCD1CB9444D00705E93 /* ZZFSpringView.m */; };
+		95FCBCD11CB9445B00705E93 /* ZZFCollisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FCBCD01CB9445B00705E93 /* ZZFCollisionView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95F0E93D1CB8DBEF001DCE5D /* 06-物理仿真动画框架.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "06-物理仿真动画框架.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F0E9411CB8DBEF001DCE5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95F0E9431CB8DBEF001DCE5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95F0E9441CB8DBEF001DCE5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95F0E9461CB8DBEF001DCE5D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		95F0E9471CB8DBEF001DCE5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95F0E94A1CB8DBEF001DCE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95F0E94C1CB8DBEF001DCE5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95F0E94F1CB8DBEF001DCE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95F0E9511CB8DBEF001DCE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95F0E95A1CB8E0F1001DCE5D /* ZZFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZFViewController.h; path = ../ZZFViewController.h; sourceTree = "<group>"; };
+		95F0E95B1CB8E0F1001DCE5D /* ZZFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZFViewController.m; path = ../ZZFViewController.m; sourceTree = "<group>"; };
+		95F0E9611CB9142E001DCE5D /* ZZFBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFBaseView.h; sourceTree = "<group>"; };
+		95F0E9621CB9142E001DCE5D /* ZZFBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFBaseView.m; sourceTree = "<group>"; };
+		95FCBCC31CB9441800705E93 /* ZZFSnapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFSnapView.h; sourceTree = "<group>"; };
+		95FCBCC41CB9441800705E93 /* ZZFSnapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFSnapView.m; sourceTree = "<group>"; };
+		95FCBCC61CB9442500705E93 /* ZZFPushView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFPushView.h; sourceTree = "<group>"; };
+		95FCBCC71CB9442500705E93 /* ZZFPushView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFPushView.m; sourceTree = "<group>"; };
+		95FCBCC91CB9444100705E93 /* ZZFAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFAttachmentView.h; sourceTree = "<group>"; };
+		95FCBCCA1CB9444100705E93 /* ZZFAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFAttachmentView.m; sourceTree = "<group>"; };
+		95FCBCCC1CB9444D00705E93 /* ZZFSpringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFSpringView.h; sourceTree = "<group>"; };
+		95FCBCCD1CB9444D00705E93 /* ZZFSpringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFSpringView.m; sourceTree = "<group>"; };
+		95FCBCCF1CB9445B00705E93 /* ZZFCollisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFCollisionView.h; sourceTree = "<group>"; };
+		95FCBCD01CB9445B00705E93 /* ZZFCollisionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFCollisionView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95F0E93A1CB8DBEF001DCE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95F0E9341CB8DBEF001DCE5D = {
+			isa = PBXGroup;
+			children = (
+				95F0E93F1CB8DBEF001DCE5D /* 06-物理仿真动画框架 */,
+				95F0E93E1CB8DBEF001DCE5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95F0E93E1CB8DBEF001DCE5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95F0E93D1CB8DBEF001DCE5D /* 06-物理仿真动画框架.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95F0E93F1CB8DBEF001DCE5D /* 06-物理仿真动画框架 */ = {
+			isa = PBXGroup;
+			children = (
+				95F0E9601CB91406001DCE5D /* View */,
+				95F0E95E1CB913E6001DCE5D /* Other */,
+				95F0E95D1CB913D4001DCE5D /* Controller */,
+				95F0E9401CB8DBEF001DCE5D /* Supporting Files */,
+			);
+			path = "06-物理仿真动画框架";
+			sourceTree = "<group>";
+		};
+		95F0E9401CB8DBEF001DCE5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95F0E94C1CB8DBEF001DCE5D /* Assets.xcassets */,
+				95F0E94E1CB8DBEF001DCE5D /* LaunchScreen.storyboard */,
+				95F0E9511CB8DBEF001DCE5D /* Info.plist */,
+				95F0E9411CB8DBEF001DCE5D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95F0E95D1CB913D4001DCE5D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95F0E9461CB8DBEF001DCE5D /* ViewController.h */,
+				95F0E9471CB8DBEF001DCE5D /* ViewController.m */,
+				95F0E95A1CB8E0F1001DCE5D /* ZZFViewController.h */,
+				95F0E95B1CB8E0F1001DCE5D /* ZZFViewController.m */,
+				95F0E9491CB8DBEF001DCE5D /* Main.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		95F0E95E1CB913E6001DCE5D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				95F0E9431CB8DBEF001DCE5D /* AppDelegate.h */,
+				95F0E9441CB8DBEF001DCE5D /* AppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		95F0E9601CB91406001DCE5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95F0E9611CB9142E001DCE5D /* ZZFBaseView.h */,
+				95F0E9621CB9142E001DCE5D /* ZZFBaseView.m */,
+				95FCBCC31CB9441800705E93 /* ZZFSnapView.h */,
+				95FCBCC41CB9441800705E93 /* ZZFSnapView.m */,
+				95FCBCC61CB9442500705E93 /* ZZFPushView.h */,
+				95FCBCC71CB9442500705E93 /* ZZFPushView.m */,
+				95FCBCC91CB9444100705E93 /* ZZFAttachmentView.h */,
+				95FCBCCA1CB9444100705E93 /* ZZFAttachmentView.m */,
+				95FCBCCC1CB9444D00705E93 /* ZZFSpringView.h */,
+				95FCBCCD1CB9444D00705E93 /* ZZFSpringView.m */,
+				95FCBCCF1CB9445B00705E93 /* ZZFCollisionView.h */,
+				95FCBCD01CB9445B00705E93 /* ZZFCollisionView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95F0E93C1CB8DBEF001DCE5D /* 06-物理仿真动画框架 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F0E9541CB8DBEF001DCE5D /* Build configuration list for PBXNativeTarget "06-物理仿真动画框架" */;
+			buildPhases = (
+				95F0E9391CB8DBEF001DCE5D /* Sources */,
+				95F0E93A1CB8DBEF001DCE5D /* Frameworks */,
+				95F0E93B1CB8DBEF001DCE5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "06-物理仿真动画框架";
+			productName = "06-物理仿真动画框架";
+			productReference = 95F0E93D1CB8DBEF001DCE5D /* 06-物理仿真动画框架.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95F0E9351CB8DBEF001DCE5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = zzf.con;
+				TargetAttributes = {
+					95F0E93C1CB8DBEF001DCE5D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 95F0E9381CB8DBEF001DCE5D /* Build configuration list for PBXProject "06-物理仿真动画框架" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95F0E9341CB8DBEF001DCE5D;
+			productRefGroup = 95F0E93E1CB8DBEF001DCE5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95F0E93C1CB8DBEF001DCE5D /* 06-物理仿真动画框架 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95F0E93B1CB8DBEF001DCE5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F0E9501CB8DBEF001DCE5D /* LaunchScreen.storyboard in Resources */,
+				95F0E94D1CB8DBEF001DCE5D /* Assets.xcassets in Resources */,
+				95F0E94B1CB8DBEF001DCE5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95F0E9391CB8DBEF001DCE5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F0E9481CB8DBEF001DCE5D /* ViewController.m in Sources */,
+				95FCBCC51CB9441800705E93 /* ZZFSnapView.m in Sources */,
+				95F0E9451CB8DBEF001DCE5D /* AppDelegate.m in Sources */,
+				95F0E9421CB8DBEF001DCE5D /* main.m in Sources */,
+				95FCBCCB1CB9444100705E93 /* ZZFAttachmentView.m in Sources */,
+				95F0E95C1CB8E0F1001DCE5D /* ZZFViewController.m in Sources */,
+				95F0E9631CB9142E001DCE5D /* ZZFBaseView.m in Sources */,
+				95FCBCC81CB9442500705E93 /* ZZFPushView.m in Sources */,
+				95FCBCD11CB9445B00705E93 /* ZZFCollisionView.m in Sources */,
+				95FCBCCE1CB9444D00705E93 /* ZZFSpringView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95F0E9491CB8DBEF001DCE5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95F0E94A1CB8DBEF001DCE5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95F0E94E1CB8DBEF001DCE5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95F0E94F1CB8DBEF001DCE5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95F0E9521CB8DBEF001DCE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95F0E9531CB8DBEF001DCE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95F0E9551CB8DBEF001DCE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "06-物理仿真动画框架/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zzf.-6---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95F0E9561CB8DBEF001DCE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "06-物理仿真动画框架/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zzf.-6---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95F0E9381CB8DBEF001DCE5D /* Build configuration list for PBXProject "06-物理仿真动画框架" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F0E9521CB8DBEF001DCE5D /* Debug */,
+				95F0E9531CB8DBEF001DCE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F0E9541CB8DBEF001DCE5D /* Build configuration list for PBXNativeTarget "06-物理仿真动画框架" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F0E9551CB8DBEF001DCE5D /* Debug */,
+				95F0E9561CB8DBEF001DCE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95F0E9351CB8DBEF001DCE5D /* Project object */;
+}
