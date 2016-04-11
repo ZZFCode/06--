@@ -21,7 +21,7 @@
         
         NSMutableArray *array = [NSMutableArray array];
         
-        for (int i = 0; i<10; i++) {
+        for (int i = 0; i<5; i++) {
             UIView *viewi = [self randView:i];
             [self addSubview:viewi];
             [array addObject:viewi];
@@ -138,10 +138,16 @@
         [self setNeedsDisplay];
         
     }else if(rec.state == UIGestureRecognizerStateEnded){
+        
+        
+        //kvo监听方块中心的改变
+        [self.boxView addObserver:self forKeyPath:@"center" options:NSKeyValueObservingOptionNew context:@"123"];
+        
+        
         NSLog(@"拖拽结束");
         //清除线条
-        self.startPoint = CGPointZero;
-        self.boxView.center = CGPointZero;
+        self.startPoint = self.boxView.center;
+//        self.boxView.center = CGPointZero;
         [self setNeedsDisplay];
         
         //计算偏移量
@@ -160,11 +166,34 @@
         //让单次推动生效
         self.push.active = YES;
         
+        
     }
     
     
     
 }
+//kvo是通过通知来实现的,所以在结束的时候也必须要移除监听
+/**
+ *  kvo需要实现的方法
+ *
+ *  @param keyPath  被监听的属性
+ *  @param object   被监听的对象
+ *  @param change   属性相关的所有信息
+ *  @param rect     标记
+ */
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
+    [self setNeedsDisplay];
+    
+    NSLog(@"11");
+}
+
+
+//结束的时候移除监听
+- (void)dealloc
+{
+    [self.boxView removeObserver:self forKeyPath:@"center"];
+}
+
 
 //绘制线条
 -(void)drawRect:(CGRect)rect{
