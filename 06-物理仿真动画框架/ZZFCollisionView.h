@@ -12,4 +12,9 @@
 
 @property(nonatomic,strong)NSArray *array;
 
+@property(nonatomic,strong)UIPushBehavior *push
+;
+
+@property(nonatomic,assign)CGPoint startPoint;
+
 @end

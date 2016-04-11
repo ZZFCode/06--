@@ -86,6 +86,21 @@
         [self.animator addBehavior:item];
         
         
+        //给白色view添加一个push事件
+        UIPushBehavior *push = [[UIPushBehavior alloc]initWithItems:@[self.boxView] mode:UIPushBehaviorModeInstantaneous];
+        
+        //添加到仿真者
+        [self.animator addBehavior:push];
+        
+        //赋值
+        self.push = push;
+        
+        //添加点击手势
+        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panAction:)];
+        
+        //把点击手势添加到屏幕上
+        [self addGestureRecognizer:pan];
+        
         
     }
     return self;
@@ -105,9 +120,67 @@
     return view1;
 }
 
+//实现点击事件中的监听事件
+-(void)panAction:(UIPanGestureRecognizer*)rec{
+    //获取手势触摸的点
+    CGPoint loc = [rec locationInView:self];
+    //判断状态
+    if (rec.state == UIGestureRecognizerStateBegan) {
+        self.startPoint = loc;
+        NSLog(@"开始拖拽");
+        [self setNeedsDisplay];
+    }else if (rec.state == UIGestureRecognizerStateChanged){
+        NSLog(@"正在拖拽");
+        //保存当前的点
+        self.startPoint = loc;
+        
+        //绘制图形
+        [self setNeedsDisplay];
+        
+    }else if(rec.state == UIGestureRecognizerStateEnded){
+        NSLog(@"拖拽结束");
+        //清除线条
+        self.startPoint = CGPointZero;
+        self.boxView.center = CGPointZero;
+        [self setNeedsDisplay];
+        
+        //计算偏移量
+        CGPoint offset = CGPointMake(self.boxView.center.x - loc.x, self.boxView.center.y - loc.y);
+        
+        //计算距离
+        CGFloat distance = hypotf(offset.y, offset.x);
+        
+        //计算角度
+        CGFloat angle = atan2(offset.y, offset.x);
+        
+        //设置推动行为的属性
+        self.push.magnitude = distance/1000;
+        self.push.angle = angle;
+        
+        //让单次推动生效
+        self.push.active = YES;
+        
+    }
+    
+    
+    
+}
+
+//绘制线条
+-(void)drawRect:(CGRect)rect{
+    //创建一个路径对象
+    UIBezierPath *patn = [UIBezierPath bezierPath];
+    //设置起点
+    [patn moveToPoint:self.self.boxView.center];
+    //设置终点
+    [patn addLineToPoint:self.startPoint];
+    //设置线宽,颜色
+    [patn setLineCapStyle:kCGLineCapRound];
+    [patn setLineWidth:10];
+    [[UIColor blackColor]CGColor];
+    //渲染
+    [patn stroke];
+}
 
 
-//-(void)tapAction{
-//    NSLog(@"kkdl;asdjf");
-//}
 @end
